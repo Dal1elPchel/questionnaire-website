@@ -1,6 +1,9 @@
 body {
     background-color: #1f291f;
-    font-family: "M";
+    font-family: "Myriad Pro", sans-serif;
+    padding: 0;
+    margin: 0;
+    color: #ffffff;
 }
 
 *, *::before, *::after {
