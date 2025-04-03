@@ -9,3 +9,110 @@ body {
 *, *::before, *::after {
     box-sizing: border-box;
 }
+
+.container {
+    width: 100%;
+    min-height: 550px;
+    height: 100%;
+    background-color: #496349;
+    border-bottom: solid 40px #3a4e3a;
+    border-top: solid 40px #3a4e3a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin-top: 120px;
+}
+
+#question, #answer_variants {
+    display: inline-block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.divider {
+    height: 410px;
+    width: 2px;
+    background-color: #3a4e3a;
+}
+
+.timer {
+    position: relative;
+    margin: 25px 0 0 auto;
+    width: 250px;
+    height: 70px;
+    text-transform: uppercase;
+}
+
+.timer_block {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+    align-items: center;
+    position: absolute;
+    background-color: #496349;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    text-align: center;
+}
+
+.timer_shadow {
+    background-color: #3a4e3a;
+    width: 115%;
+    height: 100%;
+    position: absolute;
+    top: 15px;
+    right: 0;
+    z-index: 1;
+}
+
+.current {
+    background-color: #6e9e6e;
+    border: 3px solid black;
+}
+
+.no_checked {
+    background-color: #496349;
+    border: none;
+}
+
+.button {
+    font-size: 20px;
+    color: white;
+    width: 70px;
+    height: 70px;
+    border-radius: 25%;
+    transition: .3s;
+    text-transform: uppercase;
+    margin-left: 50px;
+}
+
+.button:hover {
+    background-color: #fff;
+    color: #496349;
+}
+
+.checked {
+    background-color: #6e9e6e;
+    border: none;
+}
+
+.answered {
+    background-color: #816e9e;
+    border: none;
+}
+
+.finish_button {
+    width: 150px;
+    background-color: #496349;
+    border: none;
+    border-radius: 15%;
+}
+
+@font-face {
+    font-family: 'Myriad Pro';
+    src: url("../fonts/MYRIADPRO-REGULAR.OTF") format("otf");
+    font-weight: normal;
+    font-style: normal;
+}
