@@ -1,0 +1,8 @@
+body {
+    background-color: #1f291f;
+    font-family: "M";
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
