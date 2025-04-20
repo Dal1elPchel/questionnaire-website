@@ -5,7 +5,7 @@
     <title>$Title$</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/default.css">
-    <script src="index.js" defer></script>
+    <script src="scripts/index.js" defer type="module"></script>
   </head>
   <body>
     <div class="container">
@@ -31,7 +31,7 @@
         <div>
           <div class="time_block block">
             <label for="timer">Введите время прохождения теста</label>
-            <input type="time" name="timer" id="timer"/>
+            <input type="number" name="timer" required min="0" id="timer"/>
           </div>
 
           <input type="button" value="начать" id="start_button"/>
