@@ -4,5 +4,5 @@ window.addEventListener('load', () => {
 
 
 window.addEventListener('popstate', (event) => {
-    window.location.href = "../index.html";
+    window.location.href = "./index.html";
 })
