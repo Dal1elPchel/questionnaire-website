@@ -1,4 +1,4 @@
-class Quiz {
+export class Quiz {
     constructor(questions) {
         this.questions = questions; // массив объектов Question
         this.currentQuestionIndex = 0; // индекс текущего вопроса

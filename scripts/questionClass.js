@@ -1,9 +1,9 @@
-class Question {
-    constructor(questionText, options, correctAnswer, type) {
+export class Question {
+    constructor(questionText, options, type, correctAnswer) {
         this.questionText = questionText; // текст вопроса
         this.options = options; // массив вариантов ответов
-        this.correctAnswer = correctAnswer; // правильный ответ
         this.type = type; // тип вопроса ('checkbox', 'radio', 'select', 'text')
+        this.correctAnswer = correctAnswer; // правильный ответ
     }
 
     // проверяет правильность ответа
