@@ -2,7 +2,7 @@ import {Timer} from "./timerClass.js"
 import {Question} from "./questionClass.js";
 import {Quiz} from "./quizClass.js";
 import {UI} from "./UIClass.js";
-
+import {ButtonManager} from "./buttonManagerClass.js";
 
 async function loadQuestion() {
     const RESPONSE = await fetch("../data/package.json");
@@ -22,6 +22,13 @@ async function initializeTest() {
     const UI_MANAGER = new UI(QUIZ, questionElem, optionsElem);
 
     UI_MANAGER.questionRender();
+}
+
+function initializeButtonManager() {
+    let buttonsList = document.getElementById("questionList");
+    const buttonManager = new ButtonManager(buttonsList);
+
+    buttonManager.displayButtons();
 }
 
 function initializeTimer() {
@@ -44,13 +51,22 @@ function initializeTimer() {
         return null;
     }
 
+}
 
+const finishButton = document.getElementById("finishButton");
+    finishButton.addEventListener("click", () => {
+    window.location.href = "results.html";
+});
+
+
+function finishTest() {
 
 }
 
 async function init() {
     initializeTimer();
     initializeTest();
+    initializeButtonManager();
 }
 
 document.addEventListener("DOMContentLoaded", init);
